@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+
+}
+.form{
+    text-align: center;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+
+#name{
+    margin: 15px 0;
+}
+
+#submitbtn{
+    border:0;
+    margin: 10px 0;
+    background-color: dodgerblue;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+}
+#loginbtn{
+    border:0;
+    margin: 10px 0;
+    background-color: dodgerblue;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+
+#loginbtn:hover{
+background-color:deepskyblue;
+
+}
+
+#login-form{
+    text-align: center;
+    width: 400px;
+    margin: 50px auto;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+
+table {
+    width: 100vw;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+    color:black;
+}
+td{
+    text-align: center;
+
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color:dodgerblue;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+    color:green;
+}
+
+td button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#submitbtn:hover{
+    background-color: deepskyblue;
+}
+#show-password{
+    position: relative;bottom: 45px;left: 125px;
+    background: none;
+    border: 0;
+    color: gray;
+    font-size: larger;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+#db-h1{
+    padding: 30px 50px;
+    background-color: maroon;
+    color: white;
+    text-shadow: 0 0 10px cyan;
+}
+#LogoText{
+    font-weight: bolder;
+}
+#LogoText::first-letter{
+    color:silver;
+    font-size: larger;
+}
+
+
+
+/* Home Page */
+#navbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+}
+#page{
+    position: fixed;
+    top: 8%;
+
+}
+#body{
+    background-color: rgb(68, 68, 68);
+    box-sizing: border-box;
+}
+#page a{
+    background-color: rgb(68, 68, 68);
+    color:white;
+    
+}
