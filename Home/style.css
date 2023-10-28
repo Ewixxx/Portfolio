@@ -6,21 +6,26 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+#navbar{
+  box-shadow: 0 0 15px cyan;
+}
 body {
   box-sizing: border-box;
   margin-top: 60px;
   min-height: 100vh;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgb(68, 67, 67);
   text-align: center;
   width: 100vw;
   overflow-x: hidden;
 }
 
 
-
+h2{
+  margin-top: 10%;
+  color: cyan;
+}
 .wrapper{
   max-height: 100%;
   display: flex;
@@ -58,6 +63,18 @@ body {
   height: 300px;
 }
 
+/* Accordion */
+#accordionExample {
+  margin: 20px auto;
+  text-align: start;
+  width: 50%;
+}
+.accordion-body a{
+  text-decoration: none;
+}
+
+
+
 
 
 
@@ -67,8 +84,8 @@ body {
     box-sizing: border-box;
     margin-top: 60px;
     min-height: 100vh;
-    background: #f2f2f2;
-    background-color: #ffffff;
+    background: rgb(68, 67, 67);
+    background-color: rgb(68, 67, 67);
     width: 35vw;
     margin-left: 0;
     align-items: center;
@@ -77,6 +94,7 @@ body {
   h2{
     width: 370px;
     margin-right: auto;
+    margin-top: 70%;
     margin-left: auto;
   }
   
@@ -112,8 +130,26 @@ body {
   #htmllogo{
     width: 300px;
     height: 200px;
-    margin-left: 35%;
+    margin-left: 28%;
 
   } 
   
+/* Accordion */
+#accordionExample {
+  text-align: start;
+  width: 100%;
+  margin-left: 10px;
+}
+.accordion-header{
+  width: 100%;
+}
+.accordion-item{
+  width: 270%;
+}
+div.accordion-body{
+  width: 100%;
+  display: flex;
+
+}
+
 }

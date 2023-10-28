@@ -71,6 +71,9 @@ background-color:deepskyblue;
         border-radius: 20px;
         box-shadow: 0 0 10px;
     }
+    #submitbtn{
+        margin-top: -30px;
+       }
     /* Login Page */
     #login-form{
         text-align: center;
@@ -94,9 +97,7 @@ background-color:deepskyblue;
     }
 
 
-    #submitbtn{
-     margin-top: -30px;
-    }
+
 }
 
 
