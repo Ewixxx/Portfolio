@@ -58,3 +58,11 @@ if (alertTrigger) {
     appendAlert('<a href="https://github.com/Ewixxx/FlashCard"> Login with Register and update profile PHP & SQL &HorizontalLine; click</a>', 'success')
   })
 }
+
+
+const myCarouselElement = document.querySelector('#carouselExampleDark')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})
