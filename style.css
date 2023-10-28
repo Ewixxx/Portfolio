@@ -53,6 +53,85 @@ background-color:deepskyblue;
     border-radius: 20px;
     box-shadow: 0 0 10px;
 }
+/* Iphone X POV */
+
+@media (max-width: 375px){
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width:fit-content;
+        
+    }
+    /* Reg Form */
+    #reg-form{
+        position: relative;
+        text-align: center;
+        width: 350px;
+        margin: 20px 12.5px;
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 0 10px;
+    }
+    /* Login Page */
+    #login-form{
+        text-align: center;
+        width: 350px;
+        margin: 50px auto;
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 0 10px;
+    }
+
+    #show-password i{
+        position: relative;bottom: 0px;right: 20px;
+        background: none;
+        border: 0;
+        color: gray;
+        font-size: large;
+    }
+
+    #already {
+        font-size: smaller;
+    }
+
+
+    #submitbtn{
+     margin-top: -30px;
+    }
+}
+
+
+
+
+#submitbtn:hover{
+    background-color: deepskyblue;
+}
+#show-password{
+    position: relative;bottom: 45px;left: 125px;
+    background: none;
+    border: 0;
+    color: gray;
+    font-size: larger;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* Database */
+
+#db-h1{
+    padding: 30px 50px;
+    background-color: maroon;
+    color: white;
+    text-shadow: 0 0 10px cyan;
+}
+#LogoText{
+    font-weight: bolder;
+}
+#LogoText::first-letter{
+    color:silver;
+    font-size: larger;
+}
 
 table {
     width: 100vw;
@@ -94,57 +173,3 @@ td button {
     border-radius: 5px;
 }
 
-#submitbtn:hover{
-    background-color: deepskyblue;
-}
-#show-password{
-    position: relative;bottom: 45px;left: 125px;
-    background: none;
-    border: 0;
-    color: gray;
-    font-size: larger;
-}
-::-webkit-scrollbar{
-    display: none;
-}
-
-#db-h1{
-    padding: 30px 50px;
-    background-color: maroon;
-    color: white;
-    text-shadow: 0 0 10px cyan;
-}
-#LogoText{
-    font-weight: bolder;
-}
-#LogoText::first-letter{
-    color:silver;
-    font-size: larger;
-}
-
-
-
-/* Home Page */
-#navbar{
-    position: fixed;
-    top:0;
-    width: 100%;
-}
-
-.navbar-brand{
-    font-weight: bolder;
-}
-#page{
-    position: fixed;
-    top: 8%;
-
-}
-#body{
-    background-color: rgb(68, 68, 68);
-    box-sizing: border-box;
-}
-#page a{
-    background-color: rgb(68, 68, 68);
-    color:white;
-    
-}
