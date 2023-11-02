@@ -59,7 +59,8 @@ background-color:deepskyblue;
     body{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         width:fit-content;
-        
+        background-color: rgb(68, 67, 67);
+
     }
     /* Reg Form */
     #reg-form{
@@ -70,6 +71,7 @@ background-color:deepskyblue;
         padding: 3rem;
         border-radius: 20px;
         box-shadow: 0 0 10px;
+        background-color: #fff;
     }
     #submitbtn{
         margin-top: -30px;
@@ -78,10 +80,11 @@ background-color:deepskyblue;
     #login-form{
         text-align: center;
         width: 350px;
-        margin: 50px auto;
+        margin-left: 13px;
         padding: 3rem;
         border-radius: 20px;
-        box-shadow: 0 0 10px;
+        box-shadow: 0 0 10px cyan;
+        background-color: #fff;
     }
 
     #show-password i{

@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family:"Poppins" sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 #navbar{
   box-shadow: 0 0 15px cyan;
+
+}
+.navbar-brand{
+  position: relative;
+  left: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+#ewix{
+  width: 550px;
+  height: 450px;
+  background: none;
+  margin-top: 50px;
+  position: relative;
+  left: 400px;
 }
 body {
   box-sizing: border-box;
@@ -20,15 +35,172 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 20px;
+}
+
+/* Tooltip text */
+.tooltip-container .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:cyan;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: -40px; /* Position the tooltip above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip text visibility on hover */
+.tooltip-container:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 
+.floating-icon{
+  display: flex;
+  width: 320px;
+  height: 70px;
+  z-index: 999;
+  position: fixed;
+  top: 600px;
+  left: 40%;
+  background-color: rgba(39, 39, 39, 0.4);
+  text-align: initial;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 60px;
+}
+.floating-icon li{
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline;
+  text-decoration: none;
+}
+
+.floating-icon:hover{
+  box-shadow: 0 0 15px cyan;
+}
+#section1{
+  height: 500px;
+  margin-bottom: 20%;
+
+}
+
+#name{
+  font-weight: 500;
+  font-size: 50px;
+  position:absolute;
+  top:230px;
+  left: 70px;
+  color: #fff;
+}
+
+.wrapper{
+  display: flex;
+  position:absolute;
+  top: 300px;
+  left: 70px;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: cyan;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 120%;
+  width: 100%;
+  background-color: rgb(68, 67, 67);
+  border-left: 2px solid cyan;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+#section1 h3{
+  color: #fff; 
+  position: absolute;
+  top:390px;
+  left: 70px;
+  text-align: start;
+}
+#cv{
+  width: 120px;
+  height: 35px;
+  border: 0;
+  border-radius: 5px;
+  outline:0;
+  background-color: aqua;
+  font-weight: bold;
+  position: absolute;
+  left: 235px;
+  top: 480px;
+}
+#cv:hover{
+  background-color: aquamarine;
+}
+
+.check-icon{
+  position: relative;
+  top: 180px;
+  right: 240px;
+}
 h2{
-  margin-top: 10%;
   color: rgb(255, 255, 255);
   text-shadow: cyan 0 0 10px;
 
 }
-.wrapper{
+
+#projects{
+  position: relative;
+  color: #fff;
+  font-size: 60px;
+}
+
+.wrapper-one{
   max-height: 100%;
   display: flex;
   overflow-x: auto;
@@ -43,26 +215,13 @@ h2{
   box-shadow: 0 2px 20px cyan;
   border-radius: 20px;
   margin-bottom: 50px;
+  position: relative;
+  left:100%;
+  top:-550px;
 }
-.wrapper .card{
-  min-width: 100%;
-  height: 100%;
-  line-height: 20px;
-  text-align: center;
-  margin-right: 20px;
-}
-.card{
-  box-shadow: 0 0 20px black;
-}
-.card img{
-  width: 100%;
-  height: 400px;
-}
-.card-body{
-  background-color: rgb(43, 42, 42);
-  color: #fff;
-}
+
 #htmllogo{
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   width: 500px;
@@ -71,75 +230,15 @@ h2{
 .carousel-item img{
   height: 500px;
   width: 200vw;
+
+}
+#section2{
+  position:absolute;
+  left: 40px;
+  height: 80vh;
 }
 
 
-
-
-
-
-/* Iphone X Dimension */
-@media (max-width:375px) {
-  body {
-    box-sizing: border-box;
-    margin-top: 60px;
-    min-height: 100vh;
-    background: rgb(68, 67, 67);
-    background-color: rgb(68, 67, 67);
-    width: 35vw;
-    margin-left: 0;
-    align-items: center;
-    text-align: center;
-  }
-  h2{
-    width: 370px;
-    margin-right: auto;
-    margin-top: 70%;
-    margin-left: auto;
-  }
-  
-  .wrapper{
-    margin-right: 5px;
-    margin-left: 5px;
-    max-height: 100%;
-    display: flex;
-    margin-top: 50px;
-    padding-left: 0px;
-    margin-bottom: 50px;
-    width: 365px;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 2px 20px cyan;
-    border-radius: 20px;
-  
-  }
-  .wrapper .card{
-    min-width: 100%;
-    height: 50%;
-    line-height: 20px;
-    text-align: center;
-    margin-right: 20px;
-  }
-  
-  
-  .card img{
-    width: 100%;
-    height: 250px;
-  }
-  .card-body{
-    background-color: rgb(43, 42, 42);
-    color: #fff;
-  }
-  #htmllogo{
-    width: 300px;
-    height: 200px;
-    margin-left: 28%;
-
-  } 
-  
-.carousel-item img{
-  height: 400px;
-  width: 400px;
+::-webkit-scrollbar{
+  display: none;
 }
-
-}
-

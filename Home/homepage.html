@@ -8,12 +8,12 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Ewixxx</title>
+    <title>EwixDev</title>
 </head>
 
-<nav id= "navbar" class="navbar navbar-dark bg-dark fixed-top">
+<nav id= "navbar" class="navbar navbar-dark bg-dark fixed-top" >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color: cyan; text-shadow: 0 0 10px">EwixDev</a>
+      <a class="navbar-brand" href="#" style="color: cyan; text-shadow: 0 0 20px">EwixDev</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,11 +54,108 @@
   </nav>
 
 
-<body id="body">
 
+
+  <div class="floating-icon">
+    <div class="container">
+      <div class="tooltip-container">
+        <span>
+          <a class="scroll-link" href="#section1">
+            <lord-icon
+              src="https://cdn.lordicon.com/cnpvyndp.json"
+              trigger="hover"
+              colors="primary:#30e8bd"
+              style="width:30px;height:30px"
+            ></a>
+          </span>
+        <div class="tooltiptext">Home</div>
+      </div>
+  
+      <div class="tooltip-container">
+     
+          <a class="scroll-link" href="#section2">
+            <lord-icon
+              src="https://cdn.lordicon.com/rbbnmpcf.json"
+              trigger="hover"
+              colors="primary:#30e8bd"
+              style="width:30px;height:30px"
+            ></lord-icon>
+          </a>
+      
+        <div class="tooltiptext">Projects</div>
+      </div>
+  
+      <div class="tooltip-container">
+        <span>
+          <a href="">
+            <lord-icon
+              src="https://cdn.lordicon.com/nzixoeyk.json"
+              trigger="hover"
+              colors="primary:#30e8bd"
+              style="width:30px;height:30px"
+            ></lord-icon>
+          </a>
+        </span>
+        <div class="tooltiptext">Socials</div>
+      </div>
+  
+      <div class="tooltip-container">
+        <span>
+          <a href="#">
+            <lord-icon
+              src="https://cdn.lordicon.com/axteoudt.json"
+              trigger="hover"
+              colors="primary:#30e8bd"
+              style="width:30px;height:30px"
+            ></lord-icon>
+          </a>
+        </span>
+        <div class="tooltiptext">FAQs</div>
+      </div>
+    </div>
+  </div>
+
+
+  <body id="body">
+
+<div class="section1" id="section1">
+<header>
+  <h1 id="name">Hi, I'm <b style="color: cyan;">Eric Reyes</b></h1>
+  <div class="check-icon">
+  <lord-icon
+  src="https://cdn.lordicon.com/oqdmuxru.json"
+  trigger="hover"
+  colors="primary:cyan"
+  style="width:50px;height:50px">
+  </lord-icon>
+  </div>
+  <img src="img/ewix.png" alt="ewix" id="ewix">
+</header>
+  
+  <div class="wrapper">
+    <div class="static-txt">I'm a</div>
+    <ul class="dynamic-txts">
+      <li><span>Student</span></li>
+      <li><span>Designer</span></li>
+      <li><span>Developer</span></li>
+      <li><span>Freelancer</span></li>
+    </ul>
+  </div>
+  <h3>Web Developer from the Philippines. <br>
+      I'm also a Computer Technician.
+  </h3>
+  <input type="button" id="cv" value="Download CV" onclick="downloadCV()">
+</div>
+
+
+
+
+
+<div class="section2" id="section2">
+  <h1 id="projects">PROJECTS</h1>
 <h2>Login System with Register and Update Profile </h2>
 <p id="htmlogo"><img src="img/html.png" id="htmllogo"></p>
-<div class="wrapper">
+<div class="wrapper-one">
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="2000">
@@ -82,12 +179,13 @@
   </div>
   
 </div>
-
+</div>
 
 
 </body>
+
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
 </html>
